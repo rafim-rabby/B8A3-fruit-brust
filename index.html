@@ -151,8 +151,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide3" class="btn btn-circle">❮</a>
                             <a href="#slide1" class="btn btn-circle">❯</a>
                         </div>
@@ -178,7 +177,7 @@
         <!-- Deal of the day -->
         <section class="flex flex-col justify-center items-center border-8 border-teal-400">
             <!-- section content -->
-            <div class="flex flex-col md:flex-row justify-between">
+            <div class="w-full border-8 border-pink-400 flex flex-col md:flex-row justify-between">
                 <!-- Paragraph -->
                 <div class="flex-1 text-left border-8 border-yellow-500">
                     <h1 class="text-5xl font-extrabold mb-6">Deal of the day</h1>
@@ -188,31 +187,31 @@
                 </div>
 
                 <!-- Countdown -->
-                <div class="flex-1 flex justify-end items-center border-8 border-yellow-800">
+                <div class=" flex-1 flex justify-end items-center border-8 border-yellow-800">
                     <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:15;"></span>:
+                            <span class="countdown text-5xl font-bold">
+                                <span style="--value:15;"></span><img src="./images/Countdown.svg" alt="" class="w-9">
                             </span>
-                            days
+                            <span class="text-base font-medium text-[#0C0C0C99]">days</span>
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:10;"></span>:
+                            <span class="countdown text-5xl font-bold">
+                                <span style="--value:10;"></span><img src="./images/Countdown.svg" alt="" class="w-9">
                             </span>
-                            hours
+                            <span class="text-base font-medium text-[#0C0C0C99]">hours</span>
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:24;"></span>:
+                            <span class="countdown text-5xl font-bold">
+                                <span style="--value:24;"></span><img src="./images/Countdown.svg" alt="" class="w-9">
                             </span>
-                            min
+                            <span class="text-base font-medium text-[#0C0C0C99]">min</span>
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
+                            <span class="countdown text-5xl font-bold">
                                 <span style="--value:57;"></span>
                             </span>
-                            sec
+                            <span class="text-base font-medium text-[#0C0C0C99]">sec</span>
                         </div>
                     </div>
                 </div>
@@ -238,10 +237,38 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                             </div>
                         </div>
-                        <!-- modal -->
-                        <div><a href="" class="text-[#F85559] text-lg font-bold">Details</a></div>
+                        <div>
+                            <button class="text-[#F85559] text-lg font-bold"
+                                onclick="my_modal_5.showModal()">Details</button>
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <figure class="px-10 pt-10">
+                                        <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center space-y-6">
+                                        <h2 class="card-title text-5xl font-extrabold">Apple</h2>
+                                        <p class="text-base font-medium text-[#0C0C0C99]">
+                                            Professional employees are there for you to pick the most amazing and fresh fruits.
+                                        </p>
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        </div>
+                                        <div class="card-actions gap-6">
+                                            <button class="btn btn-outline btn-error">Close</button>
+                                            <button class= "btn text-white bg-fruity-button">Buy Now</button>
+                                        </div>
+                                    </div>
+                        </div>
+                        </form>
+                        </dialog>
                     </div>
+                    <!-- <a href="" class="">Details</a> -->
                 </div>
+            </div>
 
             </div>
             <button class="btn text-white bg-fruity-button">Shop All</button>
